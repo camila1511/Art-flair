@@ -1,4 +1,5 @@
 import 'package:auth_firebase_app/pages/login_page.dart';
+import 'package:auth_firebase_app/pages/chat.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,13 +28,13 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           headline1: TextStyle(
             fontSize: 46.0,
-            color: Colors.blue.shade700,
+            color: Colors.black,
             fontWeight: FontWeight.w500,
           ),
           bodyText1: const TextStyle(fontSize: 18.0),
         ),
       ),
-      home: const LoginPage(),
+      home: const Chat(),
     );
   }
 }
