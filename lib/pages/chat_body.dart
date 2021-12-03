@@ -27,6 +27,13 @@ class _ChatState extends State<ChatBody> {
                 onPressed: () {},
                 icon: Icon(Icons.arrow_back),
                 color: Colors.black),
+            actions: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.invert_colors_on),
+                color: Colors.black,
+              ),
+            ],
           ),
           body: Center(
             child: ListView.builder(

@@ -1,3 +1,4 @@
+import 'package:auth_firebase_app/pages/messages/message_screen.dart';
 import 'package:auth_firebase_app/pages/login_page.dart';
 import 'package:auth_firebase_app/pages/chat_body.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
           bodyText1: const TextStyle(fontSize: 18.0),
         ),
       ),
-      home: const ChatBody(),
+      home: MessagesScreen(),
     );
   }
 }
