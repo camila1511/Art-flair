@@ -1,5 +1,6 @@
 import 'package:auth_firebase_app/model/fire_auth.dart';
 import 'package:auth_firebase_app/model/validator.dart';
+import 'package:auth_firebase_app/pages/content_page.dart';
 import 'package:auth_firebase_app/pages/profile_page.dart';
 import 'package:auth_firebase_app/pages/register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -31,11 +32,7 @@ class _LoginPageState extends State<LoginPage> {
 
     if (user != null) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (context) => ProfilePage(
-            user: user,
-          ),
-        ),
+        MaterialPageRoute(builder: (context) => ContentPage(user: user)),
       );
     }
 
@@ -116,6 +113,8 @@ class _LoginPageState extends State<LoginPage> {
                                   children: [
                                     Expanded(
                                       child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                            primary: Colors.pink),
                                         onPressed: () async {
                                           _focusEmail.unfocus();
                                           _focusPassword.unfocus();
@@ -144,7 +143,7 @@ class _LoginPageState extends State<LoginPage> {
                                                   .pushReplacement(
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      ProfilePage(user: user),
+                                                      ContentPage(user: user),
                                                 ),
                                               );
                                             }
@@ -159,6 +158,8 @@ class _LoginPageState extends State<LoginPage> {
                                     const SizedBox(width: 24.0),
                                     Expanded(
                                       child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                            primary: Colors.pink),
                                         onPressed: () {
                                           Navigator.of(context).push(
                                             MaterialPageRoute(
