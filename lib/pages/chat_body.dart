@@ -38,8 +38,7 @@ class _ChatState extends State<ChatBody> {
           body: Center(
             child: ListView.builder(
               itemCount: chatsData.length,
-              //itemBuilder: (context, index) => ChatCard(chat: chatsData[index]),
-              itemBuilder: (context, index) => ChatCard(),
+              itemBuilder: (context, index) => ChatCard(chat: chatsData[index]),
             ),
           )),
     );
@@ -47,11 +46,12 @@ class _ChatState extends State<ChatBody> {
 }
 
 class ChatCard extends StatelessWidget {
-  //final Chat chat;
   const ChatCard({
     Key? key,
-    //this.chat,
+    required this.chat,
   }) : super(key: key);
+
+  final ChatList chat;
 
   @override
   Widget build(BuildContext context) {
@@ -65,11 +65,10 @@ class ChatCard extends StatelessWidget {
               Stack(
                 children: [
                   CircleAvatar(
-                      radius: 30,
-                      //backgroundImage: AssetImage(chat.image),
-                      backgroundImage: AssetImage("assets/images/user.png")),
-                  //if(chat.isActive)
-                  if (true)
+                    radius: 30,
+                    backgroundImage: AssetImage(chat.image),
+                  ),
+                  if (chat.isActive)
                     Positioned(
                       right: 0,
                       bottom: 0,
@@ -94,8 +93,7 @@ class ChatCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        //chat.name
-                        "nombre del usuario",
+                        chat.name,
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w500),
                       )
@@ -111,24 +109,24 @@ class ChatCard extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.pink,
-                              border: Border.all(color: Colors.pink),
-                              borderRadius: BorderRadius.circular(50.0)),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 8.0, vertical: 3.0),
-                            child: Text(
-                              //chat.notiCount
-                              "2",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500),
+                        if (chat.notiCount != '0')
+                          Container(
+                            decoration: BoxDecoration(
+                                color: Colors.pink,
+                                border: Border.all(color: Colors.pink),
+                                borderRadius: BorderRadius.circular(50.0)),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8.0, vertical: 3.0),
+                              child: Text(
+                                chat.notiCount,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500),
+                              ),
                             ),
-                          ),
-                        )
+                          )
                       ],
                     ),
                   ),
