@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class FireAuth {
+  static get printToZone => null;
+
   static Future<User?> registerUsingEmailPassword({
     required String name,
     required String email,
@@ -20,11 +22,14 @@ class FireAuth {
       user = auth.currentUser;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
+        // ignore: avoid_print
         print('The password provided is too weak.');
       } else if (e.code == 'email-already-in-use') {
+        // ignore: avoid_print
         print('The account already exists for that email.');
       }
     } catch (e) {
+      // ignore: avoid_print
       print(e);
     }
     return user;
@@ -46,9 +51,17 @@ class FireAuth {
       user = userCredential.user;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
+        // ignore: avoid_print
         print('No user found for that email.');
       } else if (e.code == 'wrong-password') {
-        print('Wrong password provided.');
+        // ignore: avoid_print
+        String line = 'Wrong password provided.'.toString();
+        var toZone = printToZone;
+        if (toZone == null) {
+          printToConsole(line);
+        } else {
+          toZone(line);
+        }
       }
     }
 
@@ -64,3 +77,5 @@ class FireAuth {
     return refreshedUser;
   }
 }
+
+void printToConsole(String line) {}

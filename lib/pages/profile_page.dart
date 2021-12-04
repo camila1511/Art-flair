@@ -7,6 +7,7 @@ import 'login_page.dart';
 class ProfilePage extends StatefulWidget {
   final User user;
 
+  // ignore: use_key_in_widget_constructors
   const ProfilePage({required this.user});
 
   @override
@@ -36,12 +37,12 @@ class _ProfilePageState extends State<ProfilePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'NAME: ${_currentUser.displayName}',
+              'Usuario: ${_currentUser.displayName}',
               style: Theme.of(context).textTheme.bodyText1,
             ),
             const SizedBox(height: 16.0),
             Text(
-              'EMAIL: ${_currentUser.email}',
+              'Correo: ${_currentUser.email}',
               style: Theme.of(context).textTheme.bodyText1,
             ),
             const SizedBox(height: 16.0),
@@ -51,14 +52,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: Theme.of(context)
                         .textTheme
                         .bodyText1!
-                        .copyWith(color: Colors.green),
+                        .copyWith(color: Colors.purple),
                   )
                 : Text(
                     'Email not verified',
                     style: Theme.of(context)
                         .textTheme
                         .bodyText1!
-                        .copyWith(color: Colors.red),
+                        .copyWith(color: Colors.pink[300]),
                   ),
             const SizedBox(height: 16.0),
             _isSendingVerification
