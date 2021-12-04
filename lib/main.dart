@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           bodyText1: const TextStyle(fontSize: 18.0),
         ),
       ),
-      home: MessagesScreen(),
+      home: ChatBody(),
     );
   }
 }
