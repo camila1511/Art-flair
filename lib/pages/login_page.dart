@@ -51,23 +51,37 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Firebase Authentication'),
+          toolbarHeight: 66,
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.black,
+          elevation: 0,
+          title: const Text(
+            'LogIn',
+            style: TextStyle(color: Colors.black, fontSize: 26.0),
+          ),
+          leading: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.arrow_back),
+              color: Colors.black),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.invert_colors_on),
+              color: Colors.black,
+            ),
+          ],
         ),
         body: FutureBuilder(
           future: _initializeFirebase(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               return Padding(
-                padding: const EdgeInsets.only(left: 24.0, right: 24.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 24.0),
-                      child: Text(
-                        'Login',
-                        style: Theme.of(context).textTheme.headline1,
-                      ),
+                    Container(
+                      padding: const EdgeInsets.only(bottom: 50),
                     ),
                     Form(
                       key: _formKey,
@@ -81,11 +95,15 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             decoration: InputDecoration(
                               hintText: "Email",
-                              errorBorder: UnderlineInputBorder(
+                              border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(6.0),
                                 borderSide: const BorderSide(
                                   color: Colors.red,
                                 ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: Colors.pink, width: 1.0),
                               ),
                             ),
                           ),
@@ -98,12 +116,16 @@ class _LoginPageState extends State<LoginPage> {
                               password: value!,
                             ),
                             decoration: InputDecoration(
-                              hintText: "Password",
-                              errorBorder: UnderlineInputBorder(
+                              hintText: "Contraseña",
+                              border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(6.0),
                                 borderSide: const BorderSide(
-                                  color: Colors.red,
+                                  color: Colors.pink,
                                 ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: Colors.pink, width: 1.0),
                               ),
                             ),
                           ),
@@ -116,6 +138,8 @@ class _LoginPageState extends State<LoginPage> {
                                   children: [
                                     Expanded(
                                       child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                            primary: Colors.black),
                                         onPressed: () async {
                                           _focusEmail.unfocus();
                                           _focusPassword.unfocus();
@@ -159,6 +183,8 @@ class _LoginPageState extends State<LoginPage> {
                                     const SizedBox(width: 24.0),
                                     Expanded(
                                       child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                            primary: Colors.white),
                                         onPressed: () {
                                           Navigator.of(context).push(
                                             MaterialPageRoute(
@@ -168,8 +194,8 @@ class _LoginPageState extends State<LoginPage> {
                                           );
                                         },
                                         child: const Text(
-                                          'Register',
-                                          style: TextStyle(color: Colors.white),
+                                          '¿Eres Nuevo? Registrate aqui',
+                                          style: TextStyle(color: Colors.pink),
                                         ),
                                       ),
                                     ),
