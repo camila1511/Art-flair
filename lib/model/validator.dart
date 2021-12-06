@@ -1,18 +1,16 @@
 class Validator {
   static String? validateName({required String name}) {
-    // ignore: unnecessary_null_comparison
     if (name == null) {
       return null;
     }
     if (name.isEmpty) {
-      return 'Name can\'t be empty';
+      return 'El nombre no puede ser nulo';
     }
 
     return null;
   }
 
   static String? validateEmail({required String email}) {
-    // ignore: unnecessary_null_comparison
     if (email == null) {
       return null;
     }
@@ -20,23 +18,22 @@ class Validator {
         r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$");
 
     if (email.isEmpty) {
-      return 'Email can\'t be empty';
+      return 'El correo no puede ser nulo';
     } else if (!emailRegExp.hasMatch(email)) {
-      return 'Enter a correct email';
+      return 'Ingrese un email correcto';
     }
 
     return null;
   }
 
   static String? validatePassword({required String password}) {
-    // ignore: unnecessary_null_comparison
     if (password == null) {
       return null;
     }
     if (password.isEmpty) {
-      return 'Password can\'t be empty';
+      return 'La contraseña no puede ser nula';
     } else if (password.length < 6) {
-      return 'Enter a password with length at least 6';
+      return 'Ingrese una contraseña de al menos 6 carácteres.';
     }
 
     return null;
