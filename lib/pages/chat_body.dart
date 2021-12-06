@@ -25,10 +25,9 @@ class _ChatState extends State<ChatBody> {
             style: TextStyle(color: Colors.black, fontSize: 26.0),
           ),
           leading: IconButton(
-              onPressed: () {},
-              /*onPressed: () {
-                  Navigator.pop(context);
-                },*/
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: Icon(Icons.arrow_back),
               color: Colors.black),
           actions: [

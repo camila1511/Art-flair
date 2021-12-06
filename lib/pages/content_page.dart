@@ -1,3 +1,4 @@
+import 'package:auth_firebase_app/pages/chat_body.dart';
 import 'package:auth_firebase_app/widgets/Actividades_widget.dart';
 import 'package:auth_firebase_app/widgets/home_widget.dart';
 import 'package:auth_firebase_app/pages/photoUpload.dart';
@@ -36,24 +37,55 @@ class _ContentPageState extends State<ContentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 66,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.black,
+        elevation: 0,
+        title: const Text(
+          'Actividades',
+          style: TextStyle(color: Colors.black, fontSize: 26.0),
+        ),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
+            color: Colors.black),
+        actions: [
+          IconButton(
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ChatBody(),
+                )),
+            icon: const Icon(Icons.message),
+            color: Colors.black,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.invert_colors_on),
+            color: Colors.black,
+          ),
+          IconButton(
+            onPressed: () {
+              if (User != null) {
+                FirebaseAuth.instance.signOut();
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => LoginPage(),
+                  ),
+                );
+              }
+            },
+            icon: const Icon(Icons.logout),
+            color: Colors.black,
+          ),
+        ],
+      ),
       body: Center(
         child: Padding(
           padding: EdgeInsets.only(top: 25),
-          child: Align(
-              alignment: Alignment.topRight,
-              child: FloatingActionButton(
-                  child: Icon(Icons.logout),
-                  backgroundColor: Colors.pink[800],
-                  onPressed: () {
-                    if (User != null) {
-                      FirebaseAuth.instance.signOut();
-                      Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (context) => LoginPage(),
-                        ),
-                      );
-                    }
-                  })),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
