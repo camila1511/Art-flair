@@ -7,10 +7,14 @@ INJECTED from C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLIC
 MERGED from C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\android\app\src\main\AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_auth] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\bc497780c1ce60ed2e7015258fc2513f\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\cb85e813550ceb859d5d8655b705694f\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\2b298d710992f12b9e2e0e6710dea16b\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\e8c12af64c0d197211b7d090cb61cdf8\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\5aab23ebf0755884548d9d3bd3ecce40\exifinterface-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\4137babf2606acb1e424ad3914d5b8b3\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\f263fcb179e74220f9266564bf6fa6b0\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\0813e45a0b3806629b40dbeb70c75a60\jetified-play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
@@ -66,6 +70,8 @@ MERGED from [:firebase_auth] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CI
 MERGED from [:firebase_auth] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\cb85e813550ceb859d5d8655b705694f\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\cb85e813550ceb859d5d8655b705694f\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\2b298d710992f12b9e2e0e6710dea16b\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -140,6 +146,12 @@ MERGED from [:firebase_auth] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CI
 MERGED from [:firebase_auth] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\bc497780c1ce60ed2e7015258fc2513f\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\bc497780c1ce60ed2e7015258fc2513f\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\cb85e813550ceb859d5d8655b705694f\jetified-firebase-auth-21.0.1\AndroidManifest.xml:21:5-44
@@ -148,6 +160,8 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\john.san
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\2b298d710992f12b9e2e0e6710dea16b\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\e8c12af64c0d197211b7d090cb61cdf8\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\e8c12af64c0d197211b7d090cb61cdf8\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\5aab23ebf0755884548d9d3bd3ecce40\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\5aab23ebf0755884548d9d3bd3ecce40\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\4137babf2606acb1e424ad3914d5b8b3\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\4137babf2606acb1e424ad3914d5b8b3\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\f263fcb179e74220f9266564bf6fa6b0\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
@@ -254,6 +268,22 @@ ADDED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CIC
 		ADDED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker] C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\cb85e813550ceb859d5d8655b705694f\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 	android:name

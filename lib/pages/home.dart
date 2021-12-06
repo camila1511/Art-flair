@@ -1,3 +1,4 @@
+import 'package:auth_firebase_app/pages/login_page.dart';
 import 'package:auth_firebase_app/pages/register_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
@@ -69,7 +70,7 @@ class BtnSession extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const RegisterPage(),
+                    builder: (context) => const LoginPage(),
                   ),
                 );
               },
