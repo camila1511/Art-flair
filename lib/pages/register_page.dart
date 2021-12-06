@@ -34,7 +34,28 @@ class _RegisterPageState extends State<RegisterPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Register'),
+          toolbarHeight: 66,
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.black,
+          elevation: 0,
+          title: const Text(
+            'Registro',
+            style: TextStyle(color: Colors.black, fontSize: 26.0),
+          ),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            color: Colors.black,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.invert_colors_on),
+              color: Colors.black,
+              onPressed: () {},
+            ),
+          ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -53,12 +74,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           name: value!,
                         ),
                         decoration: InputDecoration(
-                          hintText: "Name",
-                          errorBorder: UnderlineInputBorder(
+                          hintText: "Usuario",
+                          focusedBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.pink, width: 1.0),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.grey, width: 1.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(6.0),
-                            borderSide: const BorderSide(
-                              color: Colors.red,
-                            ),
+                            borderSide:
+                                BorderSide(color: Colors.red, width: 1.0),
                           ),
                         ),
                       ),
@@ -70,12 +98,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           email: value!,
                         ),
                         decoration: InputDecoration(
-                          hintText: "Email",
-                          errorBorder: UnderlineInputBorder(
+                          hintText: "Correo",
+                          focusedBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.pink, width: 1.0),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.grey, width: 1.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(6.0),
-                            borderSide: const BorderSide(
-                              color: Colors.red,
-                            ),
+                            borderSide:
+                                BorderSide(color: Colors.red, width: 1.0),
                           ),
                         ),
                       ),
@@ -88,12 +123,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           password: value!,
                         ),
                         decoration: InputDecoration(
-                          hintText: "Password",
-                          errorBorder: UnderlineInputBorder(
-                            borderRadius: BorderRadius.circular(6.0),
-                            borderSide: const BorderSide(
-                              color: Colors.red,
-                            ),
+                          hintText: "Contraseña",
+                          focusedBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.pink, width: 1.0),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.grey, width: 1.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            borderSide:
+                                BorderSide(color: Colors.red, width: 1.0),
                           ),
                         ),
                       ),
@@ -104,9 +146,12 @@ class _RegisterPageState extends State<RegisterPage> {
                               children: [
                                 Expanded(
                                   child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Colors.black,
+                                    ),
                                     onPressed: () async {
                                       setState(() {
-                                        _isProcessing = true;
+                                        _isProcessing = false;
                                       });
 
                                       if (_registerFormKey.currentState!
@@ -124,6 +169,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         });
 
                                         if (user != null) {
+                                          _isProcessing = false;
                                           Navigator.of(context)
                                               .pushAndRemoveUntil(
                                             MaterialPageRoute(
@@ -136,8 +182,10 @@ class _RegisterPageState extends State<RegisterPage> {
                                       }
                                     },
                                     child: const Text(
-                                      'Sign up',
-                                      style: TextStyle(color: Colors.white),
+                                      'Registrarse',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
