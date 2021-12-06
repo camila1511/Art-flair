@@ -1,4 +1,5 @@
 import 'package:auth_firebase_app/model/chatList.dart';
+import 'package:auth_firebase_app/pages/messages/message_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -14,33 +15,51 @@ class _ChatState extends State<ChatBody> {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Scaffold(
-          appBar: AppBar(
-            toolbarHeight: 66,
-            backgroundColor: Colors.transparent,
-            foregroundColor: Colors.black,
-            elevation: 0,
-            title: const Text(
-              'Mensajes',
-              style: TextStyle(color: Colors.black, fontSize: 26.0),
-            ),
-            leading: IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.arrow_back),
-                color: Colors.black),
-            actions: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.invert_colors_on),
-                color: Colors.black,
-              ),
-            ],
+        appBar: AppBar(
+          toolbarHeight: 66,
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.black,
+          elevation: 0,
+          title: const Text(
+            'Mensajes',
+            style: TextStyle(color: Colors.black, fontSize: 26.0),
           ),
-          body: Center(
-            child: ListView.builder(
-              itemCount: chatsData.length,
-              itemBuilder: (context, index) => ChatCard(chat: chatsData[index]),
+          leading: IconButton(
+              onPressed: () {},
+              /*onPressed: () {
+                  Navigator.pop(context);
+                },*/
+              icon: Icon(Icons.arrow_back),
+              color: Colors.black),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.invert_colors_on),
+              color: Colors.black,
             ),
-          )),
+          ],
+        ),
+        body: Center(
+          child: ListView.builder(
+            itemCount: chatsData.length,
+            itemBuilder: (context, index) => ChatCard(
+              chat: chatsData[index],
+              press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MessagesScreen(),
+                  )),
+            ),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(
+            Icons.person_add_alt_1,
+            color: Colors.white,
+          ),
+        ),
+      ),
     );
   }
 }
@@ -49,14 +68,16 @@ class ChatCard extends StatelessWidget {
   const ChatCard({
     Key? key,
     required this.chat,
+    required this.press,
   }) : super(key: key);
 
   final ChatList chat;
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: press,
       child: Padding(
           padding:
               const EdgeInsets.symmetric(horizontal: 20, vertical: 20 * 0.75),
