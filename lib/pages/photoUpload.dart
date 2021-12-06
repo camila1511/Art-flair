@@ -19,9 +19,27 @@ class _photoUploadState extends State<photoUpload> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pink[800],
-        title: Text("Nuevo post"),
-        centerTitle: true,
+        toolbarHeight: 66,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.black,
+        elevation: 0,
+        title: const Text(
+          'Publicar',
+          style: TextStyle(color: Colors.black, fontSize: 26.0),
+        ),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
+            color: Colors.black),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.invert_colors_on),
+            color: Colors.black,
+          ),
+        ],
       ),
       body: Center(
         child:

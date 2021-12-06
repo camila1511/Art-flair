@@ -62,10 +62,9 @@ class _LoginPageState extends State<LoginPage> {
             style: TextStyle(color: Colors.black, fontSize: 26.0),
           ),
           leading: IconButton(
-              onPressed: () {},
-              /*onPressed: () {
+              onPressed: () {
                 Navigator.pop(context);
-              },*/
+              },
               icon: const Icon(Icons.arrow_back),
               color: Colors.black),
           actions: [
@@ -187,26 +186,35 @@ class _LoginPageState extends State<LoginPage> {
                                       ),
                                     ),
                                     const SizedBox(width: 24.0),
-                                    Expanded(
-                                      child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            primary: Colors.white),
-                                        onPressed: () {
-                                          Navigator.of(context).push(
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const RegisterPage(),
-                                            ),
-                                          );
-                                        },
-                                        child: const Text(
-                                          '¿Eres Nuevo? Registrate aqui',
-                                          style: TextStyle(color: Colors.pink),
-                                        ),
+                                  ],
+                                ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(
+                                child: Center(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 10.0),
+                                    child: InkWell(
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const RegisterPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: new Text(
+                                        '¿Eres Nuevo? Registrate aqui',
+                                        style: TextStyle(
+                                            color: Colors.pink, fontSize: 18.0),
                                       ),
                                     ),
-                                  ],
-                                )
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     )
