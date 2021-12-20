@@ -1,5 +1,5 @@
 import 'package:auth_firebase_app/model/ChatMessage.dart';
-import 'package:auth_firebase_app/pages/messages/components/chat_input_filed.dart';
+import 'package:auth_firebase_app/ui/pages/messages/components/chat_input_filed.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {

@@ -1,4 +1,4 @@
-#Mon Dec 06 09:19:33 COT 2021
+#Mon Dec 20 08:00:57 COT 2021
 base.1=C\:\\Users\\john.sanchez\\Documents\\Estudio-UNINORTE\\CICLO4\\RETO\\APLICACION\\Art-flair\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
 base.0=C\:\\Users\\john.sanchez\\Documents\\Estudio-UNINORTE\\CICLO4\\RETO\\APLICACION\\Art-flair\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
