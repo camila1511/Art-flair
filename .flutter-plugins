@@ -1,5 +1,7 @@
 # This is a generated file; do not edit or check into version control.
-firebase_auth=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth-3.2.0\\
-firebase_auth_web=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth_web-3.2.0\\
-firebase_core=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-1.10.0\\
-firebase_core_web=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-1.2.0\\
+firebase_auth=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth-1.4.1\\
+firebase_auth_web=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth_web-1.3.1\\
+firebase_core=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-1.10.6\\
+firebase_core_web=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-1.5.3\\
+firebase_messaging=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_messaging-9.1.4\\
+firebase_messaging_web=C:\\Users\\ANGELA\\Documents\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_messaging_web-1.0.7\\
