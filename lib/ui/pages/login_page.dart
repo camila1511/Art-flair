@@ -1,8 +1,8 @@
 import 'package:auth_firebase_app/model/fire_auth.dart';
 import 'package:auth_firebase_app/model/validator.dart';
-import 'package:auth_firebase_app/pages/content_page.dart';
-import 'package:auth_firebase_app/pages/profile_page.dart';
-import 'package:auth_firebase_app/pages/register_page.dart';
+import 'package:auth_firebase_app/ui/pages/content_page.dart';
+import 'package:auth_firebase_app/ui/pages/profile_page.dart';
+import 'package:auth_firebase_app/ui/pages/register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

@@ -22,7 +22,7 @@
 17-->C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\android\app\src\main\AndroidManifest.xml:3:4-40:19
 18        android:name="androidx.multidex.MultiDexApplication"
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\3c8fd1bfddb99a7a7e21faa1397acdb4\core-1.1.0\AndroidManifest.xml:24:18-86
+19-->[androidx.core:core:1.6.0] C:\Users\john.sanchez\.gradle\caches\transforms-2\files-2.1\8ec5a4192b12a309556d408337153575\core-1.6.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
 21-->C:\Users\john.sanchez\Documents\Estudio-UNINORTE\CICLO4\RETO\APLICACION\Art-flair\android\app\src\main\AndroidManifest.xml:5:9-43

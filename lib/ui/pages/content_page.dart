@@ -1,10 +1,10 @@
-import 'package:auth_firebase_app/pages/chat_body.dart';
-import 'package:auth_firebase_app/widgets/Actividades_widget.dart';
-import 'package:auth_firebase_app/widgets/home_widget.dart';
-import 'package:auth_firebase_app/pages/photoUpload.dart';
+import 'package:auth_firebase_app/ui/pages/chat_body.dart';
+import 'package:auth_firebase_app/ui/widgets/publicaciones_widget.dart';
+import 'package:auth_firebase_app/ui/widgets/Actividades_widget.dart';
+import 'package:auth_firebase_app/ui/pages/photoUpload.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:auth_firebase_app/pages/login_page.dart';
+import 'package:auth_firebase_app/ui/pages/login_page.dart';
 
 class ContentPage extends StatefulWidget {
   final User user;
@@ -18,8 +18,8 @@ class _ContentPageState extends State<ContentPage> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    HomeWidget(),
-    ProfileWidget(),
+    ActividadesWidget(),
+    PublicacionesWidget(),
   ];
 
   void _onItemTapped(int index) {
@@ -38,20 +38,15 @@ class _ContentPageState extends State<ContentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: 66,
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.black,
         elevation: 0,
         title: const Text(
-          'Actividades',
+          'Art Flair',
           style: TextStyle(color: Colors.black, fontSize: 26.0),
         ),
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(Icons.arrow_back),
-            color: Colors.black),
         actions: [
           IconButton(
             onPressed: () => Navigator.push(
@@ -83,11 +78,7 @@ class _ContentPageState extends State<ContentPage> {
           ),
         ],
       ),
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.only(top: 25),
-        ),
-      ),
+      body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
