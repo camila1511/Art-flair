@@ -1,10 +1,10 @@
+import 'package:auth_firebase_app/ui/pages/authentication/login.dart';
 import 'package:auth_firebase_app/ui/pages/chat_body.dart';
 import 'package:auth_firebase_app/ui/widgets/publicaciones_widget.dart';
 import 'package:auth_firebase_app/ui/widgets/Actividades_widget.dart';
 import 'package:auth_firebase_app/ui/pages/photoUpload.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:auth_firebase_app/ui/pages/login_page.dart';
 
 class ContentPage extends StatefulWidget {
   final User user;
@@ -68,7 +68,7 @@ class _ContentPageState extends State<ContentPage> {
                 FirebaseAuth.instance.signOut();
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => LoginPage(),
+                    builder: (context) => Login(),
                   ),
                 );
               }

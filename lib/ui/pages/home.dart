@@ -1,5 +1,5 @@
-import 'package:auth_firebase_app/ui/pages/login_page.dart';
-import 'package:auth_firebase_app/ui/pages/register_page.dart';
+import 'package:auth_firebase_app/ui/pages/authentication/login.dart';
+import 'package:auth_firebase_app/ui/pages/authentication/register.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -70,7 +70,7 @@ class BtnSession extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const LoginPage(),
+                    builder: (context) => const Login(),
                   ),
                 );
               },
@@ -96,7 +96,7 @@ class BtnSession extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const RegisterPage(),
+                    builder: (context) => const Register(),
                   ),
                 );
               },

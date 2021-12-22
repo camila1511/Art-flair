@@ -1,6 +1,6 @@
 import 'package:auth_firebase_app/ui/pages/home.dart';
 import 'package:auth_firebase_app/ui/pages/messages/message_screen.dart';
-import 'package:auth_firebase_app/ui/pages/login_page.dart';
+import 'package:auth_firebase_app/ui/pages/authentication/login.dart';
 import 'package:auth_firebase_app/ui/pages/chat_body.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
